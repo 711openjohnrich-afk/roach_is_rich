@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Marketplace - Discover exclusive deals, services, and opportunities. Your one-stop destination for quality products and services.">
+    <meta name="keywords" content="marketplace, deals, services, products, premium offers, opportunities, business">
+    <meta name="author" content="Roach Is Rich">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Premium Marketplace - Exclusive Deals & Services">
+    <meta property="og:description" content="Discover exclusive deals, services, and opportunities. Your one-stop destination for quality products.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://roach-is-rich.com">
+    <meta property="og:image" content="https://roach-is-rich.com/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Marketplace - Exclusive Deals & Services">
+    <meta name="twitter:description" content="Discover exclusive deals, services, and opportunities.">
+    
+    <title>Premium Marketplace - Exclusive Deals & Services | Roach Is Rich</title>
+    
+    <!-- Structured Data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Roach Is Rich Premium Marketplace",
+      "description": "Premium marketplace featuring exclusive deals, services, and business opportunities",
+      "url": "https://roach-is-rich.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://roach-is-rich.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Featured Offers",
+      "description": "Current featured offers and services",
+      "numberOfItems": 12,
+      "itemListElement": []
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://roach-is-rich.com">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🪳 Roach Is Rich</h1>
+                    <p class="tagline">Premium Marketplace</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Welcome to Premium Marketplace</h2>
+                <p class="hero-subtitle">Discover Exclusive Deals, Services & Opportunities</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="scrollToOffers()">Browse Offers</button>
+                    <button class="btn-secondary" onclick="openContact()">Get In Touch</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="offers-section">
+            <div class="container">
+                <h2 class="section-title">Featured Offers & Services</h2>
+                <p class="section-description">Explore our curated selection of premium opportunities</p>
+                
+                <div class="ad-board" id="adBoard">
+                    <!-- Ads will be dynamically inserted here -->
+                    
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-badge">Featured</div>
+                        <div class="ad-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="ad-icon">💼</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Premium Business Consulting</h3>
+                            <p class="ad-description" itemprop="description">Expert consulting services to grow your business. Strategy, operations, and market analysis.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Business Services</span>
+                                <span class="ad-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <span itemprop="price">$199</span>/hr
+                                </span>
+                            </div>
+                            <button class="ad-button">Learn More</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-badge">New</div>
+                        <div class="ad-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="ad-icon">🎨</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Professional Design Services</h3>
+                            <p class="ad-description" itemprop="description">Logo design, branding, web design, and creative direction for your brand.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Creative Services</span>
+                                <span class="ad-price">$299+</span>
+                            </div>
+                            <button class="ad-button">View Portfolio</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-badge">Hot</div>
+                        <div class="ad-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="ad-icon">💻</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Web Development Solutions</h3>
+                            <p class="ad-description" itemprop="description">Custom web applications, e-commerce platforms, and full-stack development.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Technology</span>
+                                <span class="ad-price">$149/hr</span>
+                            </div>
+                            <button class="ad-button">Get Quote</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="ad-icon">📱</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Mobile App Development</h3>
+                            <p class="ad-description" itemprop="description">iOS and Android app development with modern frameworks and best practices.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Mobile</span>
+                                <span class="ad-price">$179/hr</span>
+                            </div>
+                            <button class="ad-button">Contact Us</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-badge">Popular</div>
+                        <div class="ad-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <span class="ad-icon">📊</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Data Analytics & Insights</h3>
+                            <p class="ad-description" itemprop="description">Transform your data into actionable insights. BI, reporting, and predictive analytics.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Analytics</span>
+                                <span class="ad-price">$249/hr</span>
+                            </div>
+                            <button class="ad-button">Learn More</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span class="ad-icon">🎯</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Digital Marketing Services</h3>
+                            <p class="ad-description" itemprop="description">SEO, SEM, social media marketing, and content strategy to grow your online presence.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Marketing</span>
+                                <span class="ad-price">$99/hr</span>
+                            </div>
+                            <button class="ad-button">Start Campaign</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-badge">New</div>
+                        <div class="ad-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <span class="ad-icon">✍️</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Content Writing & Copywriting</h3>
+                            <p class="ad-description" itemprop="description">Professional content creation for blogs, websites, and marketing materials.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Writing</span>
+                                <span class="ad-price">$79/hr</span>
+                            </div>
+                            <button class="ad-button">View Samples</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span class="ad-icon">🔒</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Cybersecurity Services</h3>
+                            <p class="ad-description" itemprop="description">Protect your business with penetration testing, security audits, and consulting.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Security</span>
+                                <span class="ad-price">$299/hr</span>
+                            </div>
+                            <button class="ad-button">Secure Now</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-badge">Hot</div>
+                        <div class="ad-image" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);">
+                            <span class="ad-icon">🤖</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">AI & Machine Learning Solutions</h3>
+                            <p class="ad-description" itemprop="description">Custom AI models, automation, and intelligent systems for your business.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">AI/ML</span>
+                                <span class="ad-price">$349/hr</span>
+                            </div>
+                            <button class="ad-button">Explore AI</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-image" style="background: linear-gradient(135deg, #c2e9fb 0%, #a1c4fd 100%);">
+                            <span class="ad-icon">☁️</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Cloud Infrastructure Services</h3>
+                            <p class="ad-description" itemprop="description">AWS, Azure, GCP deployment, migration, and management services.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Cloud</span>
+                                <span class="ad-price">$199/hr</span>
+                            </div>
+                            <button class="ad-button">Get Started</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-badge">Featured</div>
+                        <div class="ad-image" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+                            <span class="ad-icon">📈</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Financial Planning & Advice</h3>
+                            <p class="ad-description" itemprop="description">Expert financial planning, investment strategies, and wealth management.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Finance</span>
+                                <span class="ad-price">$199/hr</span>
+                            </div>
+                            <button class="ad-button">Consult Now</button>
+                        </div>
+                    </article>
+
+                    <article class="ad-card" itemscope itemtype="https://schema.org/Product">
+                        <div class="ad-image" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                            <span class="ad-icon">🎓</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3 class="ad-title" itemprop="name">Online Courses & Training</h3>
+                            <p class="ad-description" itemprop="description">Professional development courses in technology, business, and creative skills.</p>
+                            <div class="ad-meta">
+                                <span class="ad-category">Education</span>
+                                <span class="ad-price">$49-$299</span>
+                            </div>
+                            <button class="ad-button">Browse Courses</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Marketplace?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌟</div>
+                        <h3>Quality Verified</h3>
+                        <p>All services are vetted for quality and professionalism</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Response</h3>
+                        <p>Quick turnaround times and responsive service providers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <h3>Premium Selection</h3>
+                        <p>Curated selection of top-tier professionals and services</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <h3>Secure Platform</h3>
+                        <p>Safe and secure transactions with trusted providers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Have questions? Want to list your service? Contact us!</p>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🪳 Roach Is Rich</h3>
+                    <p>Premium Marketplace for Quality Services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>Business Services</li>
+                        <li>Technology</li>
+                        <li>Creative Services</li>
+                        <li>Marketing</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Email: info@roach-is-rich.com</p>
+                    <p>Follow us on social media</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roach Is Rich. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

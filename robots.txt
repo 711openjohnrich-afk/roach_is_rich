@@ -1,0 +1,23 @@
+# robots.txt for Roach Is Rich Marketplace
+# This file allows ALL bots to crawl everything
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://roach-is-rich.com/sitemap.xml
+
+# Popular bot user agents (all allowed)
+# Googlebot
+# Bingbot
+# LinkedInBot
+# TwitterBot
+# FacebookBot
+# Slackbot
+# WhatsApp
+# TelegramBot
+# GPTBot (OpenAI)
+# ClaudeBot (Anthropic)
+# And all others!
+
+# No restrictions - we want maximum visibility! 
